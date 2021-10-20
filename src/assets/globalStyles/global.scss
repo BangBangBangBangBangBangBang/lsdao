@@ -69,15 +69,19 @@ textarea {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-wrap: wrap;
+	margin-bottom: -2.8rem;
 
 	a {
-		margin: 0 1.4rem;
+		margin: 0 1.4rem 2.8rem;
 	}
 }
+
 .flex {
 	display: flex;
 	justify-content: center;
 }
+
 .titleContainer {
 	margin-bottom: 3.6rem;
 	background: linear-gradient(
