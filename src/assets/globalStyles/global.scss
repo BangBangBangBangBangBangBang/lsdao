@@ -14,18 +14,13 @@ html {
 }
 
 body {
-	color: $color-text-dark;
+	color: $color-text-light;
 	background-color: $color-background;
 	box-sizing: border-box;
 	position: relative;
 	font-size: $font-size-1;
 	font-family: $font-family;
 	line-height: 1.6;
-}
-
-main:focus {
-	border: none;
-	outline: none;
 }
 
 h1,
@@ -63,50 +58,4 @@ textarea {
 	font-family: inherit;
 	font-size: inherit;
 	line-height: inherit;
-}
-
-.buttonContainer {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap;
-	margin-bottom: -2.8rem;
-
-	a {
-		margin: 0 1.4rem 2.8rem;
-	}
-}
-
-.flex {
-	display: flex;
-	justify-content: center;
-}
-
-.titleContainer {
-	margin-bottom: 3.6rem;
-	background: linear-gradient(
-		135deg,
-		hsl(98 100% 62%),
-		rgb(119, 227, 235),
-		rgb(73, 75, 221),
-		rgb(209, 73, 221)
-	);
-	background-clip: text;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	text-align: center;
-	background-size: 300%;
-	animation: bg 20s infinite alternate;
-}
-
-@keyframes bg {
-	0% {
-		background-position: 0% 0%;
-	}
-	50% {
-		background-position: 100% 100%;
-	}
-	100% {
-		background-position: 0% 0%;
-	}
 }

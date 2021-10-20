@@ -1,15 +1,16 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import { Layout, Seo } from '@global'
-import { Container, Button, Title } from '@UI'
+import { Container } from '@UI'
 
 const NotFoundPage = () => {
 	return (
 		<Layout>
 			<Seo title='Not Found' />
 			<Container section wrapperSm textBlock textCenter>
-				<Title>Page Not Found</Title>
+				<h1>Page Not Found</h1>
 				<p>The page you were looking for does not exist.</p>
-				<Button to='/'>Return Home</Button>
+				<Link to='/'>Return Home</Link>
 			</Container>
 		</Layout>
 	)
