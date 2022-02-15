@@ -9,22 +9,28 @@ const IndexPage = () => {
 	return (
 		<Layout>
 			<Seo />
-			<Container>
-				<ReactPlayer
-					url='/lsdaopamp.mp4'
-					width='100%'
-					height='100%'
-					controls
-					fallback={<div style={{ height: '100vh' }} />}
-				/>
-			</Container>
-
 			<Container section wrapper textCenter>
 				<Fade triggerOnce fraction={0.6}>
 					<Title>LSDao</Title>
 				</Fade>
 
 				<Buttons />
+			</Container>
+
+			<Container>
+				<ReactPlayer
+					url='/lsdaopamp.mp4'
+					config={{
+						file: {
+							attributes: {
+								poster: '/preview.png',
+							},
+						},
+					}}
+					width='100%'
+					height='100%'
+					controls
+				/>
 			</Container>
 		</Layout>
 	)
