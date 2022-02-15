@@ -16,6 +16,10 @@
 	@include button(rgb(119, 227, 235));
 }
 
+.discord {
+	@include button(#738adb);
+}
+
 .lofi {
 	@include button(#ffccd0);
 }

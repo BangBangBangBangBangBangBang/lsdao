@@ -1,6 +1,6 @@
 import React from 'react'
 import Reveal from 'react-awesome-reveal'
-import { Twitter, Link } from '@images/icons'
+import { Twitter, Discord, Link } from '@images/icons'
 import { Button } from '@UI'
 import { keyframes } from '@emotion/react'
 import * as styles from './buttons.module.scss'
@@ -25,6 +25,12 @@ const links = [
 		className: styles.twitter,
 	},
 	{
+		icon: <Discord />,
+		label: 'Discord',
+		href: 'https://discord.gg/GdmFAgtaYm',
+		className: styles.discord,
+	},
+	{
 		icon: <Link />,
 		label: 'Haveaniceday.wtf',
 		href: 'https://haveaniceday.wtf/',
@@ -43,7 +49,7 @@ const Buttons = () => {
 			{links.map(({ icon, label, href, className }, i) => (
 				<Reveal
 					keyframes={customAnimation}
-					delay={i * 300}
+					delay={i * 200}
 					triggerOnce
 					key={label}
 				>
